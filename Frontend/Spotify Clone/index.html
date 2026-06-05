@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Favicon -->
+    <link rel="icon" href="Assets/logo.png">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Spotify - Web Player: Music for everyone</title>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts (Montserrat) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Main Container -->
+    <div class="main">
+
+        <!-- ==================== SIDEBAR ==================== -->
+        <div class="sidebar">
+
+            <!-- Navigation Menu -->
+            <div class="nav">
+
+                <div class="nav-option" style="opacity: 1;">
+                    <i class="fa-solid fa-house"></i>
+                    <a href="#">Home</a>
+                </div>
+
+                <div class="nav-option">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <a href="#">Search</a>
+                </div>
+
+            </div>
+
+            <!-- Library Section -->
+            <div class="library">
+
+                <!-- Library Header -->
+                <div class="options">
+
+                    <div class="lib-options nav-option">
+                        <img src="Assets/library_icon.png" alt="Library Icon">
+                        <a href="#">Your Library</a>
+                    </div>
+
+                    <!-- Plus and Arrow Icons -->
+                    <div class="icons">
+                        <i class="fa-solid fa-plus"></i>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+
+                </div>
+
+                <!-- Library Content Boxes -->
+                <div class="lib-boxes">
+
+                    <!-- Create Playlist Box -->
+                    <div class="box">
+                        <div class="box-p1">
+                            <p>Create your first playlist</p>
+                        </div>
+                        <div class="box-p2">
+                            <p>it's easy, we'll help you</p>
+                        </div>
+                        <button class="badge">Create playlist</button>
+                    </div>
+
+                    <!-- Browse Podcasts Box -->
+                    <div class="box">
+                        <div class="box-p1">
+                            <p>Let's find some podcast to follow</p>
+                        </div>
+                        <div class="box-p2">
+                            <p>We'll keep you updated new episodes</p>
+                        </div>
+                        <button class="badge">Browse podcasts</button>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+        <!-- ==================== END SIDEBAR ==================== -->
+
+
+        <!-- ==================== MAIN CONTENT ==================== -->
+        <div class="main-content">
+
+            <!-- Sticky Top Navigation Bar -->
+            <div class="sticky-nav">
+                <div class="sticky-nav-icons">
+                    <img src="Assets/backward_icon.png" alt="Backward">
+                    <img src="Assets/forward_icon.png" alt="Forward" class="hide">
+                </div>
+
+                <div class="sticky-nav-options">
+                    <button class="badge hide" id="premium-btn">Explore Premium</button>
+                    <button class="badge" id="download-btn">
+                        <i class="fa-solid fa-download"></i> Install App
+                    </button>
+                    <i class="fa-regular fa-user" id="download-btn"></i>
+                </div>
+            </div>
+
+
+            <!-- Recently Played Section -->
+            <h2>Recently Played</h2>
+            <div class="card-container">
+                <div class="card">
+                    <img src="Assets/card1img.jpeg" alt="card_1" class="card-img">
+                    <p class="card-title">Top 50 - Global</p>
+                    <p class="card-info">Your daily update of the most played...</p>
+                </div>
+            </div>
+
+
+            <!-- Trending Near You Section -->
+            <h2>Trending now near you</h2>
+            <div class="card-container">
+                <div class="card">
+                    <img src="Assets/card2img.jpeg" alt="card_1" class="card-img">
+                    <p class="card-title">Top 50 - Global</p>
+                    <p class="card-info">Your daily update of the most played...</p>
+                </div>
+
+                <div class="card">
+                    <img src="Assets/card3img.jpeg" alt="card_1" class="card-img">
+                    <p class="card-title">Top 50 - Global</p>
+                    <p class="card-info">Your daily update of the most played...</p>
+                </div>
+
+                <div class="card">
+                    <img src="Assets/card4img.jpeg" alt="card_1" class="card-img">
+                    <p class="card-title">Top 50 - Global</p>
+                    <p class="card-info">Your daily update of the most played...</p>
+                </div>
+                <div class="card">
+                    <img src="Assets/card1img.jpeg" alt="card_1" class="card-img">
+                    <p class="card-title">Top 50 - Global</p>
+                    <p class="card-info">Your daily update of the most played...</p>
+                </div>
+                <div class="card">
+                    <img src="Assets/card2img.jpeg" alt="card_1" class="card-img">
+                    <p class="card-title">Top 50 - Global</p>
+                    <p class="card-info">Your daily update of the most played...</p>
+                </div>
+            </div>
+
+
+            <!-- Featured Charts Section -->
+            <h2>Featured Chart</h2>
+            <div class="card-container">
+                <div class="card">
+                    <img src="Assets/card5img.jpeg" alt="card_1" class="card-img">
+                    <p class="card-title">Top 50 - Global</p>
+                    <p class="card-info">Your weekly update of the most played...</p>
+                </div>
+
+                <div class="card">
+                    <img src="Assets/card6img.jpeg" alt="card_1" class="card-img">
+                    <p class="card-title">Top 50 - Global</p>
+                    <p class="card-info">Your weekly update of the most played...</p>
+                </div>
+
+                <div class="card">
+                    <img src="Assets/card1img.jpeg" alt="card_1" class="card-img">
+                    <p class="card-title">Top 50 - Global</p>
+                    <p class="card-info">Your daily update of the most played...</p>
+                </div>
+            </div>
+
+            <!-- Footer Line -->
+            <div class="footer">
+                <div class="line"></div>
+            </div>
+
+        </div>
+        <!-- ==================== END MAIN CONTENT ==================== -->
+
+
+        <!-- ==================== MUSIC PLAYER (Bottom Bar) ==================== -->
+        <div class="music-player">
+
+            <!-- Now Playing / Album Info -->
+            <div class="album">
+                <div class="album-info">
+                    <img src="Albums/album_picture.jpeg" alt="Album Art" style="width: 3rem; height: 3rem;">
+                    <div class="text-info">
+                        <p class="song">Day Light</p>
+                        <p class="singer">David Kushner</p>
+                    </div>
+                </div>
+
+                <!-- Heart & Add to Playlist Icons -->
+                <div class="album-control-images">
+                    <img src="Albums/album_icon1.png" alt="Like" class="album-control-icon">
+                    <img src="Albums/album_icon2.png" alt="Add" class="album-control-icon">
+                </div>
+            </div>
+
+            <!-- Player Controls & Progress Bar -->
+            <div class="player">
+                <div class="player-controls">
+                    <img src="Assets/player_icon1.png" alt="Shuffle" class="player-control-icon">
+                    <img src="Assets/player_icon2.png" alt="Previous" class="player-control-icon">
+                    <img src="Assets/player_icon3.png" alt="Play/Pause" class="player-control-icon"
+                        style="height: 2rem; opacity: 1;">
+                    <img src="Assets/player_icon4.png" alt="Next" class="player-control-icon">
+                    <img src="Assets/player_icon5.png" alt="Repeat" class="player-control-icon">
+                </div>
+
+                <div class="playback-bar">
+                    <span class="curr-time">00:00</span>
+                    <input type="range" class="progress-bar" step="1">
+                    <span class="tot-time">3:14</span>
+                </div>
+            </div>
+
+            <!-- Right Side Controls (Volume, Queue, etc.) -->
+            <div class="controls">
+                <img src="Albums/controls_icon1.png" alt="Lyrics">
+                <img src="Albums/controld_icon2.png" alt="Queue">
+                <img src="Albums/controls_icon3.png" alt="Connect Device">
+                <img src="Albums/controls_icon4.png" alt="Volume Icon">
+                <img src="Albums/controls_icon5.png" alt="Volume Icon 2">
+                <input type="range" class="sound-progress-bar" step="1">
+            </div>
+
+        </div>
+        <!-- ==================== END MUSIC PLAYER ==================== -->
+
+    </div>
+</body>
+
+</html>

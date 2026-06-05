@@ -1,0 +1,394 @@
+/* ====================== GLOBAL STYLES ====================== */
+
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  background-color: black;
+  color: white;
+  overflow: hidden;
+}
+
+/* Main Layout Container */
+.main {
+  display: flex;
+  height: 100vh;
+  padding: 0.5rem;
+}
+
+/* ====================== SIDEBAR ====================== */
+
+.sidebar {
+  background-color: black;
+  width: 340px;
+  border-radius: 1rem;
+  margin-right: 0.5rem;
+}
+
+/* Main Content Area */
+.main-content {
+  background-color: #121212;
+  flex: 1;
+  border-radius: 1rem;
+  overflow: auto;
+  padding: 0 1.5rem 0 1.5rem;
+}
+
+/* ====================== NAVIGATION ====================== */
+
+.nav {
+  background-color: #121212;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100px;
+  padding: 0.5rem 0.75rem;
+}
+
+.nav-option {
+  line-height: 2.5rem;
+  opacity: 0.7;
+  padding: 0.5rem 0.75rem;
+  cursor: pointer;
+}
+
+.nav-option:hover {
+  opacity: 1;
+}
+
+.nav-option i {
+  height: 1.5rem;
+}
+
+.nav-option a {
+  height: 1rem;
+  padding-left: 1rem;
+  text-decoration: none;
+  color: #ddd;
+}
+
+/* ====================== LIBRARY SECTION ====================== */
+
+.library {
+  background-color: #121212;
+  border-radius: 1rem;
+  height: calc(100% - 100px - 0.5rem); /* Adjusts height dynamically */
+  margin-top: 0.5rem;
+  padding: 0.5rem 0.75rem;
+}
+
+.options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.lib-options img {
+  height: 1.25rem;
+  width: 1.25rem;
+}
+
+.lib-options a {
+  padding-left: 1rem;
+  text-decoration: none;
+  color: #ddd;
+}
+
+.icons {
+  height: 1.25rem;
+  display: flex;
+}
+
+.icons i {
+  opacity: 0.7;
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+.icons i:hover {
+  opacity: 1;
+}
+
+/* Library Content Boxes */
+.box {
+  background-color: #232323;
+  height: 8rem;
+  border-radius: 1rem;
+  margin: 0.75rem 0 1.75rem 0;
+  padding: 0.75rem 1rem;
+}
+
+.box-p1 {
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.box-p2 {
+  font-size: 0.85rem;
+  opacity: 0.9;
+}
+
+/* ====================== BUTTONS & BADGES ====================== */
+
+.badge {
+  font-weight: 700;
+  border: none;
+  border-radius: 100px;
+  padding: 0.25rem 1rem;
+  margin: 0.5rem;
+  height: 2rem;
+  width: fit-content;
+  cursor: pointer;
+}
+
+#download-btn {
+  background-color: black;
+  color: white;
+}
+
+/* ====================== STICKY NAVIGATION ====================== */
+
+.sticky-nav {
+  position: sticky;
+  top: 0;
+  background-color: #121212;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 0;
+  z-index: 10;
+}
+
+.sticky-nav-options {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 0.75rem;
+}
+
+/* Hide elements on smaller screens */
+@media (max-width: 1000px) {
+  .hide {
+    display: none;
+  }
+}
+
+/* ====================== CARDS ====================== */
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem; /* Better spacing control */
+}
+
+.card {
+  background-color: #232323;
+  width: 150px;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin-top: 1rem;
+  margin-left: 2rem;
+  transition: background-color 0.2s;
+  cursor: pointer;
+}
+
+.card:hover {
+  background-color: #2a2a2a;
+}
+
+.card-img {
+  width: 100%;
+  border-radius: 0.5rem;
+}
+
+.card-title {
+  font-weight: 600;
+  margin: 0.75rem 0 0.3rem 0;
+}
+
+.card-info {
+  font-size: 0.85rem;
+  opacity: 0.75;
+}
+
+/* ====================== FOOTER ====================== */
+
+.footer {
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.line {
+  width: 90%;
+  height: 50%;
+  border-top: 1px solid white;
+  opacity: 0.5;
+}
+
+/* ====================== MUSIC PLAYER (Bottom Bar) ====================== */
+
+.music-player {
+  background-color: black;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 72px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  z-index: 20;
+  border-top: 1px solid #282828;
+}
+
+/* Left Section - Now Playing */
+.album {
+  width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.album-info {
+  display: flex;
+  align-items: center;
+}
+
+.text-info {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0.75rem;
+}
+
+.song {
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.singer {
+  font-size: 0.8rem;
+  opacity: 0.7;
+  margin: 0;
+}
+
+.album-control-images {
+  display: flex;
+  align-items: center;
+  padding-right: 9rem;
+}
+
+.album-control-images img {
+  height: 1.75rem;
+  padding-left: 0.5rem;
+  cursor: pointer;
+}
+
+/* Center Section - Player Controls */
+.player {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.player-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.player-control-icon {
+  height: 1rem;
+  margin-right: 1.75rem;
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.player-control-icon:hover {
+  opacity: 1;
+}
+
+.playback-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 0.5rem;
+}
+
+.progress-bar {
+  width: 70%;
+  appearance: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+/* Custom Range Slider Styling */
+.progress-bar::-webkit-slider-runnable-track {
+  background-color: #ddd;
+  border-radius: 100px;
+  height: 0.2rem;
+}
+
+.progress-bar::-webkit-slider-thumb {
+  appearance: none;
+  height: 1rem;
+  width: 1rem;
+  background-color: white;
+  border-radius: 50%;
+  margin-top: -6px;
+}
+
+.progress-bar::-webkit-slider-runnable-track:hover {
+  background-color: #1bd760;
+}
+
+/* ====================== VOLUME / SOUND SLIDER ====================== */
+
+.controls {
+  width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.controls img {
+  height: 1.5rem;
+  padding: 0 0.5rem;
+  cursor: pointer;
+}
+
+/* Volume Slider Container */
+.sound-progress-bar {
+  appearance: none;
+  width: 120px;
+  cursor: pointer;
+  background: transparent;
+}
+
+/* Track (the line) */
+.sound-progress-bar::-webkit-slider-runnable-track {
+  background-color: #535353;
+  height: 4px;
+  border-radius: 999px;
+  margin-right: 1rem;
+}
+
+/* Hide the ball/thumb completely */
+.sound-progress-bar::-webkit-slider-thumb {
+  appearance: none;
+  width: 0;
+  height: 0;
+  background: transparent;
+  box-shadow: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Optional: Make track brighter on hover */
+.sound-progress-bar:hover::-webkit-slider-runnable-track {
+  background-color: #b3b3b3;
+}

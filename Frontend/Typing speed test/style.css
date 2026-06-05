@@ -1,0 +1,63 @@
+body {
+  padding: 0;
+  background-color: #2d3142;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0;
+}
+
+#time-p {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#passage {
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+p {
+  text-align: center;
+  font-weight: 100;
+  color: #bfc0c0;
+  font-size: 45px;
+}
+
+.passage-div {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  height: 150px;
+}
+
+input {
+  text-align: center;
+  height: 75px;
+  width: 95%;
+  font-size: 45px;
+  border: none;
+  background-color: #bfc0c0;
+  color: #2d3142;
+  font-weight: bold;
+}
+
+.input-area {
+  display: flex;
+  justify-content: center;
+}
+
+.result-area {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 50px;
+}
+.wpm p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.accuracy p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
