@@ -1,4 +1,4 @@
-# Frontend Projects Collection
+# Backend Projects Collection
 This repository contains multiple backend practice projects built using HTML, CSS, JavaScript, Embeded JavaScript, Node.Js, Express.Js. Each project is organized in its own folder and focuses on building core UI and logic skills through hands-on practice.
 
 # Tech Stack
