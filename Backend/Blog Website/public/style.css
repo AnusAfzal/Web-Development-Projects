@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f4f6f9;
+  padding: 40px;
+}
+
+/* Blog card */
+div {
+  background: #fff;
+  max-width: 800px;
+  margin: 0 auto 25px;
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  transition: 0.2s ease;
+}
+
+div:hover {
+  transform: translateY(-3px);
+}
+
+/* Writer + title */
+h2 {
+  color: #222;
+  margin-bottom: 8px;
+}
+
+p {
+  color: #444;
+  line-height: 1.6;
+  margin: 10px 0;
+}
+
+/* Horizontal line */
+hr {
+  margin: 15px 0;
+  border: none;
+  border-top: 1px solid #eee;
+}
+
+/* Links */
+a {
+  display: inline-block;
+  margin-right: 10px;
+  margin-top: 10px;
+  text-decoration: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: 0.2s ease;
+}
+
+/* View button */
+a[href*="/home/"][href*="/edit"] {
+  background: #4a90e2;
+  color: white;
+}
+
+a[href*="/home/"]:not([href*="/edit"]) {
+  background: #6c757d;
+  color: white;
+}
+
+/* Delete button */
+form {
+  display: inline;
+}
+
+button {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 8px;
+  background: #e74c3c;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.2s ease;
+}
+
+button:hover {
+  background: #c0392b;
+}
+
+/* Create new blog link */
+body > a:last-child {
+  display: block;
+  width: fit-content;
+  margin: 30px auto 0;
+  background: #28a745;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 10px;
+}
