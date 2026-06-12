@@ -28,25 +28,7 @@ This is a full-stack blog web application built using Node.js, Express, and EJS.
 ---
 
 ## 📁 Project Structure
-<<<<<<< HEAD
-│
-├── views/
-│ ├── index.ejs # Home page (all blogs)
-│ ├── new.ejs # Create new blog
-│ ├── show.ejs # View single blog
-│ ├── edit.ejs # Edit blog
-│
-├── public/
-│ ├── style.css # Main styling
-│ ├── newBlogStyle.css
-│ ├── editBlogStyle.css
-│ └── showBlogStyle.css
-│
-├── app.js # Main server file
-├── package.json
-├── package-lock.json
-└── README.md
-=======
+
 - │
 - ├── views/
 - │ ├── index.ejs # Home page (all blogs)
@@ -64,8 +46,6 @@ This is a full-stack blog web application built using Node.js, Express, and EJS.
 - ├── package.json
 - ├── package-lock.json
 - └── README.md
->>>>>>> e72c62a3dcc10d82f187daf81d15e970d3b63ccb
-
 
 ---
 
